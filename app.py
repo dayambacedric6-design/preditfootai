@@ -411,7 +411,7 @@ def extraire_stats_equipes(df: pd.DataFrame) -> dict:
                          else (1 if row.home_goals == row.away_goals else 0))
         sa["xgf"].append(row.away_goals)
         sa["xga"].append(row.home_goals)
-        sa["pts"].append(3 if row.away_goals >.home_goals
+        sa["pts"].append(3 if row.away_goals > row.home_goals
                          else (1 if row.home_goals == row.away_goals else 0))
     return stats
 
