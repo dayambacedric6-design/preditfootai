@@ -914,7 +914,7 @@ with onglets[0]:
 
     if cotes_manuelles:
         cc1, cc2, cc3 = st.columns(3)
-        cote1 = cc1.number_input 1.01, 50.0, 1.85, 0.05)
+        cote1 = cc1.number_input( 1.01, 50.0, 1.85, 0.05)
         coteN = cc2.number_input("Cote N", 1.01, 50.0, 3.50, 0.05)
         cote2 = cc3.number_input("Cote 2", 1.01, 50.0, 4.20, 0.05)
 
