@@ -908,8 +908,7 @@ with onglets[0]:
     cotes_manuelles = True
     if cle_match in cotes_auto:
         c = cotes_auto[cle_match]
-        st.info(f"💰 Cotes automatiques : **1 → {c['home']:.
-                f"**N → {c['draw']:.2f}** | **2 → {c['away']:.2f}**")
+        st.info(f"💰 Cotes automatiques : **1 → {c['home']:. f"**N → {c['draw']:.2f}** | **2 → {c['away']:.2f}**")
         cote1, coteN, cote2 = c["home"], c["draw"], c["away"]
         cotes_manuelles = False
 
